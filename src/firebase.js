@@ -1,10 +1,19 @@
+import firebase from "firebase";
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDyF5MXHhRxSOMZMnbuvf8sq536C8ZH3ck",
-  authDomain: "tiktok-clone-f992e.firebaseapp.com",
-  databaseURL: "https://tiktok-clone-f992e.firebaseio.com",
-  projectId: "tiktok-clone-f992e",
-  storageBucket: "tiktok-clone-f992e.appspot.com",
-  messagingSenderId: "671111845449",
-  appId: "1:671111845449:web:3a9472ceed930f98c15198",
-  measurementId: "G-ZWWEVM6XLW",
+  apiKey: "AIzaSyDB_zYv7qAHmhOxnIyW3f9oKU_DZfMliSc",
+  authDomain: "tiktok-clone-b9db0.firebaseapp.com",
+  databaseURL: "https://tiktok-clone-b9db0.firebaseio.com",
+  projectId: "tiktok-clone-b9db0",
+  storageBucket: "tiktok-clone-b9db0.appspot.com",
+  messagingSenderId: "540487709540",
+  appId: "1:540487709540:web:f487fcff1558ba55744071",
+  measurementId: "G-JT3PJL0WPZ",
 };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebaseApp.firestore();
+
+export default db;
