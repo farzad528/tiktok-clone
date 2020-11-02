@@ -16,19 +16,24 @@ function App() {
     // BEM
     <div className="app">
       <div className="app__videos">
-        {videos.map(
-          ({ url, channel, description, song, likes, messages, shares }) => (
-            <Video
-              url={url}
-              channel={channel}
-              song={song}
-              likes={likes}
-              messages={messages}
-              description={description}
-              shares={shares}
-            />
-          )
-        )}
+        <Video
+          url="/videos/tiktok.mp4"
+          channel="fullstackfarzzy"
+          song="Where Is The Love? - @The Black Eyed Peas"
+          likes={9809}
+          messages="1.7K"
+          description="#Developer #Software #Technology"
+          shares="2.9K"
+        />
+        <Video
+          url="/videos/tiktok3.mp4"
+          channel="delaina00moore"
+          song="Mr. Blue Sky - @Electric Light Orchestra"
+          likes={6109}
+          messages="499"
+          description="Just IT things #womeninstem #humor #comedy #developer #programming #coding"
+          shares="197"
+        />
       </div>
     </div>
   );
